@@ -1,0 +1,78 @@
+.Tabset {
+  display: flex;
+  width: auto;
+  height: 34px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.Tabset::-webkit-scrollbar {
+  display: none;
+}
+
+// For Firefox
+.Tabset {
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+  scroll-behavior: smooth;
+}
+
+// For Internet Explorer and Edge
+// .Tabset::-ms-scrollbar {
+//   overflow-style: none;
+// }
+
+.Tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+  display: none;
+}
+
+.Tabset > label {
+  position: relative;
+  display: inline-block;
+  height: 27px;
+  // padding: 15px 15px 25px;
+  // border: 1px solid transparent;
+  padding: 6px 8px;
+  border: none;
+  // border-bottom: 0;
+  // cursor: pointer;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5e05ff;
+  margin: 3px;
+  font-size: 8px; // 10px suggested
+  font-weight: 400; // 600 suggested
+  font-style: italic;
+  transition: all 1s ease-out;
+}
+
+// .Tabset > label::after {
+//   content: "";
+//   position: absolute;
+//   left: 15px;
+//   bottom: 10px;
+//   width: 22px;
+//   height: 4px;
+//   background: #8d8d8d;
+// }
+
+.Tabset > input:checked + label {
+  background-color: #9df6c8;
+  color: #5e05ff;
+  // border-color: #ccc;
+  // border-bottom: 1px solid #fff;
+  // margin-bottom: -1px;
+}
+
+// .Tabset > input:focus + label::after,
+// .Tabset > input:checked + label::after {
+//   background: rgb(169, 248, 153);
+// }
+
+// .Tabset + * {
+//   border-top: 1px solid #ccc;
+// }

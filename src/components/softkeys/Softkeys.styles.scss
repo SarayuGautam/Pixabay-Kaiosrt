@@ -1,0 +1,28 @@
+.Softkeys {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 26px;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 4px;
+  white-space: nowrap;
+  background-color: rgb(43, 0, 124);
+  color: #eee;
+  z-index: 6;
+
+  #s-left,
+  #s-center,
+  #s-right {
+    width: 33%;
+  }
+
+  #s-center {
+    text-align: center;
+  }
+
+  #s-right {
+    text-align: right;
+  }
+}

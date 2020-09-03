@@ -1,0 +1,120 @@
+.Image {
+  width: 100vw;
+  min-height: calc(100vh - 54px);
+  overflow-x: hidden;
+  overflow: -moz-scrollbars-none;
+  overflow-y: auto;
+
+  .lazy-load-image-background {
+    width: 100%;
+  }
+
+  #image {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 30px;
+  }
+
+  #image-container {
+    position: relative;
+  }
+
+  #logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: auto;
+  }
+}
+
+#ad-section {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  z-index: 7;
+  transition: transform 0.5s ease-out;
+}
+
+#ad-section article {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#ad-section article img {
+  height: 100%;
+  width: auto;
+}
+
+.points-container {
+  display: flex;
+  color: rgb(167, 142, 0);
+  margin: 15px auto;
+  height: 22px;
+  width: 200px;
+  align-items: center;
+}
+
+.thanks-container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px auto;
+  width: 70px;
+  text-align: center;
+}
+
+#ad-section article .thanks-container img {
+  width: 100%;
+  height: auto;
+}
+
+#ad-paraph {
+  padding: 5px 10px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+#ad-section #ad-paraph img {
+  width: 14px;
+  height: 14px;
+}
+
+#choice {
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+  height: 22px;
+  width: 100%;
+}
+
+#ad-left,
+#ad-center,
+#ad-right {
+  width: 33vw;
+  color: rgb(0, 5, 46);
+  padding: 0 3px;
+  white-space: nowrap;
+}
+
+#ad-left {
+  opacity: 0.7;
+}
+
+#ad-right {
+  text-align: right;
+}
+
+#ad-center {
+  text-align: center;
+}
