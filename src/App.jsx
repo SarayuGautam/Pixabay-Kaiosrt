@@ -37,7 +37,7 @@ function appLoader() {
       console.log(err);
       let isApp = localStorage.getItem("apps");
       if (isApp == null) {
-        readJsonFile("../../app-promotion/apps.json", function (text) {
+        readJsonFile("./apps.json", function (text) {
           localStorage.setItem("apps", text);
         });
       }
